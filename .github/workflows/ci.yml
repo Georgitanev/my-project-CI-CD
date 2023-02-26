@@ -11,7 +11,6 @@ permissions:
 
 jobs:
   build:
-
     runs-on: ${{matrix.os}}
     strategy:
       matrix: 
@@ -29,6 +28,5 @@ jobs:
     - name: Buld with Gradle
       run: ./gradlew build
 
-  publish:
-  
-    needs: build
+#  publish:
+#    needs: build
